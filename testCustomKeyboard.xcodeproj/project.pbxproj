@@ -17,6 +17,8 @@
 		680D6D431C87EB74001DE0B1 /* testCustomKeyboardUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 680D6D421C87EB74001DE0B1 /* testCustomKeyboardUITests.m */; };
 		680D6D581C87EC15001DE0B1 /* KeyboardViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 680D6D571C87EC15001DE0B1 /* KeyboardViewController.m */; };
 		680D6D5C1C87EC15001DE0B1 /* CustomKeyboard.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 680D6D541C87EC15001DE0B1 /* CustomKeyboard.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		6875DA901D4211C90053359D /* horizontalLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 6875DA8F1D4211C90053359D /* horizontalLayout.m */; };
+		6875DA931D4229220053359D /* CollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6875DA921D4229220053359D /* CollectionViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -78,6 +80,10 @@
 		680D6D561C87EC15001DE0B1 /* KeyboardViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KeyboardViewController.h; sourceTree = "<group>"; };
 		680D6D571C87EC15001DE0B1 /* KeyboardViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KeyboardViewController.m; sourceTree = "<group>"; };
 		680D6D591C87EC15001DE0B1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6875DA8E1D4211C90053359D /* horizontalLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = horizontalLayout.h; sourceTree = "<group>"; };
+		6875DA8F1D4211C90053359D /* horizontalLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = horizontalLayout.m; sourceTree = "<group>"; };
+		6875DA911D4229220053359D /* CollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CollectionViewController.h; sourceTree = "<group>"; };
+		6875DA921D4229220053359D /* CollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CollectionViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -141,6 +147,10 @@
 				680D6D211C87EB74001DE0B1 /* AppDelegate.m */,
 				680D6D231C87EB74001DE0B1 /* ViewController.h */,
 				680D6D241C87EB74001DE0B1 /* ViewController.m */,
+				6875DA911D4229220053359D /* CollectionViewController.h */,
+				6875DA921D4229220053359D /* CollectionViewController.m */,
+				6875DA8E1D4211C90053359D /* horizontalLayout.h */,
+				6875DA8F1D4211C90053359D /* horizontalLayout.m */,
 				680D6D261C87EB74001DE0B1 /* Main.storyboard */,
 				680D6D291C87EB74001DE0B1 /* Assets.xcassets */,
 				680D6D2B1C87EB74001DE0B1 /* LaunchScreen.storyboard */,
@@ -272,6 +282,11 @@
 				TargetAttributes = {
 					680D6D191C87EB74001DE0B1 = {
 						CreatedOnToolsVersion = 7.2.1;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 0;
+							};
+						};
 					};
 					680D6D321C87EB74001DE0B1 = {
 						CreatedOnToolsVersion = 7.2.1;
@@ -347,8 +362,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				680D6D251C87EB74001DE0B1 /* ViewController.m in Sources */,
+				6875DA931D4229220053359D /* CollectionViewController.m in Sources */,
 				680D6D221C87EB74001DE0B1 /* AppDelegate.m in Sources */,
 				680D6D1F1C87EB74001DE0B1 /* main.m in Sources */,
+				6875DA901D4211C90053359D /* horizontalLayout.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -607,6 +624,7 @@
 				680D6D491C87EB74001DE0B1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		680D6D4A1C87EB74001DE0B1 /* Build configuration list for PBXNativeTarget "testCustomKeyboardTests" */ = {
 			isa = XCConfigurationList;
@@ -615,6 +633,7 @@
 				680D6D4C1C87EB74001DE0B1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		680D6D4D1C87EB74001DE0B1 /* Build configuration list for PBXNativeTarget "testCustomKeyboardUITests" */ = {
 			isa = XCConfigurationList;
@@ -623,6 +642,7 @@
 				680D6D4F1C87EB74001DE0B1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		680D6D5D1C87EC15001DE0B1 /* Build configuration list for PBXNativeTarget "CustomKeyboard" */ = {
 			isa = XCConfigurationList;
@@ -631,6 +651,7 @@
 				680D6D5F1C87EC15001DE0B1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
